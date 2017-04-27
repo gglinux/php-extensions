@@ -15,6 +15,8 @@ ZEND_FUNCTION(gglinux_hello)
 /*
  返回long类型
   等效于 ZVAL_LONG(return_value, 42);
+  
+  zend_API.h:610 定义所有类型
 */
 ZEND_FUNCTION(gglinux_long_42) 
 {
