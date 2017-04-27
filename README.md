@@ -14,7 +14,7 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 ```
 ### Document
-[demo1](https://github.com/gglinux/php-extensions/demo1):扩展开发基本结构
+[demo1](https://github.com/gglinux/php-extensions/demo1):扩展开发-基本结构
 
 [demo2](https://github.com/gglinux/php-extensions/demo2):扩展开发-独立函数
 
