@@ -7,13 +7,18 @@ PHP 5.2 +
 ## Install
 ### Linux 编译安装
 ```
-$ /path/phpize
+$ /$path/phpize
 $ ./configure
 $ make && make install
+$ //添加生成的 gglinux.so 到 php.ini
 
 ```
 ### Document
-[https://github.com/gglinux/php-extensions/doc](https://github.com/gglinux/php-extensions/doc)
+[demo1](https://github.com/gglinux/php-extensions/demo1):扩展开发基本结构
+
+[demo2](https://github.com/gglinux/php-extensions/demo2):扩展开发-独立函数
+
+[demo3](https://github.com/gglinux/php-extensions/demo3):扩展开发-使用返回值
 
 ### More
 [PHP扩展开发及内核应用](http://www.cunmou.com/)
