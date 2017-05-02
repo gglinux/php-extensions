@@ -22,6 +22,8 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 [demo4](https://github.com/gglinux/php-extensions/demo4):扩展开发-获取函数参数
 
+[demo5](https://github.com/gglinux/php-extensions/demo4):扩展开发-获取函数参数
+
 
 ### More
 [PHP扩展开发及内核应用](http://www.cunmou.com/)
