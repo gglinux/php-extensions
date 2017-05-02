@@ -1,5 +1,5 @@
 # php-extensions
-PHP HashTable使用
+PHP Array使用
 
 ## Requirement
 PHP 5.2 +
