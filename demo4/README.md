@@ -24,4 +24,21 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 5. 运行 $ php test.php。输出 见注释。
 
+### API
+
+```
+/*
+ 输出 Hello World!
+*/
+void gglinux_hello()
+
+/*
+ 得到整型返回值
+*/
+long gglinux_get_long()
+
+/*
+ 得到字符串类型
+*/
+string gglinux_get_str()
 

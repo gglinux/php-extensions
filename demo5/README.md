@@ -24,3 +24,15 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 5. 运行 $ php test.php。输出 见注释。
 
+### API
+
+```
+/*
+ print Hello World!
+*/
+void gglinux_hello()
+
+/*
+ print str
+*/
+void gglinux_test_hashtable()

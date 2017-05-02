@@ -27,14 +27,34 @@ $ //添加生成的 gglinux.so 到 php.ini
 ### API
 
 ```
-resource file_open(string filename, string mode)
- 
-bool file_close(resource filehandle)
- 
-string file_read(resource filehandle, int size)
- 
-bool file_write(resource filehandle, string buffer)
- 
-bool file_eof(resource filehandle)
+/*
+ Hello World!
+*/
+void gglinux_hello()
+
+/*
+ 打开文件
+*/
+resource gglinux_fopen(string filename, string mode)
+
+/*
+ 关闭文件
+*/ 
+bool gglinux_fclose(resource filehandle)
+
+/*
+ 读取文件
+*/ 
+string gglinux_fread(resource filehandle, int size)
+
+/*
+ 写入文件
+*/ 
+bool gglinux_fwrite(resource filehandle, string buffer)
+
+/*
+ 判断文件是否结束
+*/ 
+bool gglinux_eof(resource filehandle)
 
 ```
