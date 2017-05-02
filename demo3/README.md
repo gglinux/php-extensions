@@ -32,3 +32,18 @@ $ //添加生成的 gglinux.so 到 php.ini
 */
 void gglinux_hello()
 
+/*
+ 返回 int 42
+*/
+gglinux_long_42()
+
+/*
+ 返回 string
+*/
+gglinux_str_hello()
+
+/*
+ 返回未被使用的返回值
+*/
+ gglinux_no_return()
+

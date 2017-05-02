@@ -28,7 +28,7 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 ```
 /*
- print Hello World!
+ 输出 Hello World!
 */
 void gglinux_hello()
 

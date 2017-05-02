@@ -33,12 +33,17 @@ $ //添加生成的 gglinux.so 到 php.ini
 void gglinux_hello()
 
 /*
- 得到整型返回值
+ 获取整型参数
 */
 long gglinux_get_long()
 
 /*
- 得到字符串类型
+ 获取字符串参数
 */
 string gglinux_get_str()
+
+/*
+ 获取默认参数
+*/
+string gglinux_get_defalut()
 
