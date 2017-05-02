@@ -24,7 +24,7 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 [demo5](https://github.com/gglinux/php-extensions/blob/master/demo5):扩展开发-HashTable使用
 
-[demo5](https://github.com/gglinux/php-extensions/blob/master/demo6):扩展开发-Array使用
+[demo6](https://github.com/gglinux/php-extensions/blob/master/demo6):扩展开发-Array使用
 
 
 
