@@ -48,6 +48,20 @@ ZEND_FUNCTION(gglinux_no_return)
     }
 }
 
+/*
+
+设置返回值并且结束函数	设置返回值	宏返回类型和参数
+RETURN_LONG(l)	RETVAL_LONG(l)	整数
+RETURN_BOOL(b)	RETVAL_BOOL(b)	布尔数(1或0)
+RETURN_NULL()	RETVAL_NULL()	NULL
+RETURN_DOUBLE(d)	RETVAL_DOUBLE(d)	浮点数
+RETURN_STRING(s, dup)	RETVAL_STRING(s, dup)	字符串。如果dup为1，引擎会调用estrdup()重复s，使用拷贝。如果dup为0，就使用s
+RETURN_STRINGL(s, l, dup)	RETVAL_STRINGL(s, l, dup)	长度为l的字符串值。与上一个宏一样，但因为s的长度被指定，所以速度更快。
+RETURN_TRUE	RETVAL_TRUE	返回布尔值true。注意到这个宏没有括号。
+RETURN_FALSE	RETVAL_FALSE	返回布尔值false。注意到这个宏没有括号。
+RETURN_RESOURCE(r)	RETVAL_RESOURCE(r)	资源句柄。
+
+*/
 static zend_function_entry gglinux_functions[] = {
     ZEND_FE(gglinux_hello, NULL)
     ZEND_FE(gglinux_long_42, NULL)

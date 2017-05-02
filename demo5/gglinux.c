@@ -7,13 +7,29 @@
  
 #define phpext_gglinux_ptr &gglinux_module_entry
 
-//http://www.cunmou.com/phpbook/7.1.md
+//http://www.cunmou.com/phpbook/8.1.md
 
 ZEND_FUNCTION(gglinux_hello)
 {
     php_printf("Hello World!\n");
 }
 
+/*
+内存管理
+
+emalloc(size_t size);
+ 
+efree(void *ptr);
+ 
+ecalloc(size_t nmemb, size_t size);
+ 
+erealloc(void *ptr, size_t size);
+ 
+estrdup(const char *s);
+ 
+estrndup(const char *s, unsigned int length);
+
+*/
 ZEND_FUNCTION(gglinux_test_hashtable)
 {
     HashTable *test_ht;
