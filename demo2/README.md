@@ -1,5 +1,5 @@
 # php-extensions
-PHP C扩展开发
+PHP 独立函数
 
 ## Requirement
 PHP 5.2 +
@@ -14,6 +14,17 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 ```
 ### Document
+config.m4为配置定义文件，用来读取编译命令。
+
+./modules/gglinux.so 为编译后生成的二进制文件。
+
+test.php 测试文件。
+
+代码在gglinux.c中，编译完成并且加入到php.ini后。
+
+运行 $ php test.php。输出 Hello World!。
+
+
 [demo1](https://github.com/gglinux/php-extensions/demo1):扩展开发-基本结构
 
 [demo2](https://github.com/gglinux/php-extensions/demo2):扩展开发-独立函数
