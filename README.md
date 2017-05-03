@@ -26,9 +26,9 @@ $ //添加生成的 gglinux.so 到 php.ini
 
 [demo6](https://github.com/gglinux/php-extensions/blob/master/demo6):扩展开发-Array使用
 
-[demo7](https://github.com/gglinux/php-extensions/blob/master/demo6):扩展开发-资源使用
+[demo7](https://github.com/gglinux/php-extensions/blob/master/demo7):扩展开发-资源使用
 
-[demo8](https://github.com/gglinux/php-extensions/blob/master/demo6):扩展开发-全局变量(线程安全资源管理宏)使用
+[demo8](https://github.com/gglinux/php-extensions/blob/master/demo8):扩展开发-全局变量(线程安全资源管理宏)使用
 
 
 
