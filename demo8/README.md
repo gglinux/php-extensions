@@ -1,5 +1,5 @@
 # php-extensions
-PHP 全局变量使用
+PHP 全局变量 和 线程安全资源管理宏 使用
 
 ## Requirement
 PHP 5.2 +
@@ -31,11 +31,6 @@ $ //添加生成的 gglinux.so 到 php.ini
  Hello World!
 */
 void gglinux_hello()
-
-/*
- 打开文件
-*/
-resource gglinux_fopen(string filename, string mode)
 
 /*
  全局计数
