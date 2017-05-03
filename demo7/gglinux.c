@@ -31,7 +31,7 @@ PHP_MINFO_FUNCTION()	调用phpinfo()时模块信息函数被呼叫，从而打�
 //PHP 装载即被加载
 ZEND_MINIT_FUNCTION(gglinux_file)
 {
-    //module_number 已经被定义好
+    //module_number 已经被定义好,在装载阶段，定义好资源
     le_sample_descriptor = zend_register_list_destructors_ex(myfile_dtor, NULL, "gglinux file resource", module_number);
     return SUCCESS;
 }
