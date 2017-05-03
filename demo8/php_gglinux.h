@@ -15,7 +15,7 @@ ZEND_BEGIN_MODULE_GLOBALS(gglinux)
 ZEND_END_MODULE_GLOBALS(gglinux)
 
 /*
- 这个是做什么用的？？？？？
+ 线程安全资源管理宏 
 */
 #ifdef ZTS
 #define GGLINUX_G(v) TSRMG(gglinux_globals_id,zend_gglinux_globals *, v)

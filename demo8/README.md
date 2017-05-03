@@ -1,5 +1,5 @@
 # php-extensions
-PHP 资源使用
+PHP 全局变量使用
 
 ## Requirement
 PHP 5.2 +
@@ -41,5 +41,15 @@ resource gglinux_fopen(string filename, string mode)
  全局计数
 */
 int gglinux_global_value(void)
+
+/*
+ 线程安全资源管理宏 使用实例（TSRMLS_FETCH获取）
+*/
+int gglinux_global_update(void)
+
+/*
+ 线程安全资源管理宏 使用实例（参数传递）
+*/
+int gglinux_global_update2(void)
 
 ```

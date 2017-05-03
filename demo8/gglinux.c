@@ -29,6 +29,12 @@ PHP_MINFO_FUNCTION()	调用phpinfo()时模块信息函数被呼叫，从而打�
 PHP_MINIT_FUNCTION(gglinux)
 {
     //装载阶段 初始化全局变量
+    /*
+     ZEND_INIT_MODULE_GLOBALS
+     module_name	与传递给ZEND_BEGIN_MODULE_GLOBALS()宏相同的扩展名称。
+     globals_ctor	构造函数指针。在myfile扩展里，函数原形与void php_myfile_init_globals(zend_myfile_globals *myfile_globals)类似
+     globals_dtor	析构函数指针。例如，php_myfile_init_globals(zend_myfile_globals *myfile_globals)
+    */
      ZEND_INIT_MODULE_GLOBALS(gglinux, php_gglinux_globals_ctor, NULL);
 
     return SUCCESS;
@@ -44,16 +50,51 @@ ZEND_FUNCTION(gglinux_hello)
 // 增加测试函数
 PHP_FUNCTION(gglinux_global_value)
 {
-
     GGLINUX_G(global_counter)++;
     RETURN_LONG(GGLINUX_G(global_counter));
+}
 
+/*
+ 线程安全资源管理宏 使用实例（TSRMLS_FETCH获取）
+*/
+PHP_FUNCTION(gglinux_global_update)
+{
+    gglinux_myfunc();
+    RETURN_LONG(GGLINUX_G(global_counter));
+}
+/*
+ 线程安全资源管理宏 使用实例（参数传递）
+*/
+PHP_FUNCTION(gglinux_global_update2)
+{
+    gglinux_myfunc2();
+    RETURN_LONG(GGLINUX_G(global_counter));
+}
+
+/*
+ 线程安全资源管理宏 使用实例（TSRMLS_FETCH获取）
+*/
+void gglinux_myfunc()
+{
+    //使用TSRMLS_FETCH 获取上下文全局变量
+     TSRMLS_FETCH();
+     GGLINUX_G(global_counter) = 100;
+}
+
+/*
+ 线程安全资源管理宏 使用实例（参数传递）
+*/
+void gglinux_myfunc2(TSRMLS_D)
+{
+     GGLINUX_G(global_counter) = 200;
 }
 
 
 static zend_function_entry gglinux_functions[] = {
     ZEND_FE(gglinux_hello, NULL) 
     ZEND_FE(gglinux_global_value, NULL)  
+    ZEND_FE(gglinux_global_update, NULL)      
+    ZEND_FE(gglinux_global_update2, NULL)          
     {
         NULL,
         NULL,
