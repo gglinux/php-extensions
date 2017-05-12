@@ -1,4 +1,7 @@
 # php-extensions
+[![Author](https://img.shields.io/badge/author-gglinux-green.svg)](http://gglinux.com/)
+[![License](https://img.shields.io/badge/license-apache2-blue.svg)](https://github.com/gglinux/php-extensions/blob/master/LICENSE)
+
 PHP C扩展开发
 
 ## Requirement
